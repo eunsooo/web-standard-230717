@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout01_02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #999;
+        }
+        #wrap {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #888;
+        }
+        #nav {
+            width: 100%;
+            height: 100px;
+            background-color: #777;
+        }
+        #aside {
+            float: left;
+            width: 30%;
+            height: 780px;
+            background-color: #666;
+        }
+        #section {
+            float: left;
+            width: 70%;
+            height: 780px;
+            background-color: #555;
+        }
+        #footer {
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background: #444;
+        }
+
+        /* media query */
+        @media (max-width: 1300px) {  /* 1280px이지만 약간 오차 주기 */
+            #wrap {
+                width: 96%;
+            }
+        }
+        @media (max-width: 768px) {
+            #wrap {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            #aside {
+                width: 100%;
+                height: 300px;
+            }
+            #section {
+                width: 100%;
+                height: 480px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="nav"></div>
+        <div id="aside"></div>
+        <div id="section"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
