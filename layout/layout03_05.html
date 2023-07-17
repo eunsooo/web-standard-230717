@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout03_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        #header {
+            width: 1200px;
+            height: 100px;
+            background: #999;
+        }
+        #nav {
+            width: 1200px;
+            height: 100px;
+            background: #888;
+        }
+        #main {
+            display: grid;
+            grid-template-areas: 
+                "aside article1 article1"
+                "aside article2 article2"
+                "aside article3 article3"
+            ;
+            grid-template-columns: 300px 900px;
+            grid-template-rows: 260px 260px 260px;
+        }
+        #aside {
+            grid-area: aside;
+            background: #777;
+        }
+        #article1 {
+            grid-area: article1;
+            background: #666;
+        }
+        #article2 {
+            grid-area: article2;
+            background: #555;
+        }
+        #article3 {
+            grid-area: article3;
+            background: #444;
+        }
+        #footer {
+            width: 1200px;
+            height: 100px;
+            background: #333;
+        }
+        
+        @media (max-width: 1300px) {
+        }
+        @media (max-width: 768px) {
+        }
+        @media (max-width: 480px) {
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="nav"></div>
+        <div id="main" class="clearfix">
+            <div id="aside"></div>
+            <div id="article1"></div>
+            <div id="article2"></div>
+            <div id="article3"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

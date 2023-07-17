@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout02_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+
+        }
+        #wrap {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        #header {
+            height: 100px;
+            background: #999;
+        }
+        #nav {
+            height: 100px;
+            background: #888;
+        }
+        #main {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 780px;
+        }
+        #aside {
+            background: #777;
+        }
+        #section {
+            background: #666;
+        }
+        #article {
+            background: #555;
+        }
+        #footer {
+            height: 100px;
+            background: #444;
+        }
+
+        @media (max-width: 1300px) {
+        }
+        @media (max-width: 768px) {
+        }
+        @media (max-width: 480px) {
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <nav id="nav"></nav>
+        <main id="main">
+            <aside id="aside"></aside>
+            <section id="section"></section>
+            <article id="article"></article>
+        </main>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
