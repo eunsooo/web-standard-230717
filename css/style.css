@@ -1,0 +1,211 @@
+/* fonts */
+@import url("https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css");
+.nexon {
+  font-family: "NexonLv1Gothic";
+  font-weight: 300;
+}
+
+/* common */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1160px; /* 1160 + 20 = 1200 */
+}
+
+.section {
+  padding: 120px 0;
+}
+.section > h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.section > p {
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+/* headerType */
+.header__inner {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border: 1px solid #ccc;
+}
+
+.header__logo {
+  width: 20%;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header__logo em {
+  font-size: 18px;
+  font-weight: 400;
+}
+.header__menu {
+  text-align: center;
+  width: 60%;
+}
+.header__menu ul li {
+  display: inline;
+}
+.header__menu ul li a {
+  margin: 0 5px;
+  padding: 10px 30px;
+}
+.header__menu ul li a:hover {
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+.header__member {
+  text-align: right;
+  width: 20%;
+}
+.header__member a {
+  padding: 10px 30px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+/* sliderType */
+.slider {
+  position: relative;
+}
+.slider__img {
+  background: url(../img/slide_bg01.jpg) no-repeat center center/cover;
+}
+.slider__img .desc {
+  margin: 0 auto;
+  padding: 100px 20px;
+  width: 1160px;
+}
+.slider__img .desc span {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 1px 14px 0px 14px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.slider__img .desc h3 {
+  margin-bottom: 20px;
+  margin-left: -8px;
+  line-height: 1;
+  font-size: 100px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+}
+.slider__img .desc p {
+  margin-bottom: 137px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 300;
+  color: #fff;
+}
+.slider__img .desc .btn a {
+  display: inline-block;
+  padding: 11px 50px;
+  font-size: 16px;
+  font-weight: 300;
+  background: #fff;
+}
+.slider__img .desc .btn a.black {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+}
+.slider__arrow a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 56px;
+  background: url(../img/silde_icon.svg);
+}
+.slider__arrow a.left {
+  left: 20px;
+}
+.slider__arrow a.right {
+  right: 20px;
+  background-position: -40px 0;
+}
+.slider__dot {
+  position: absolute;
+  right: 15%;
+  bottom: 90px;
+}
+.slider__dot a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/silde_icon.svg);
+  background-position: -20px -70px;
+}
+.slider__dot a.active {
+  background-position: 0 -70px;
+}
+.slider__dot a.play {
+  background-position: -40px -70px;
+}
+.slider__dot a.stop {
+  background-position: -60px -70px;
+}
+
+/* imageType */
+#imageType {
+  border-bottom: 1px solid #ccc;
+}
+
+.image__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.image__inner .image {
+  box-sizing: border-box;
+  padding: 180px 30px 30px 30px;
+  width: 49%;
+  height: 370px;
+  background: rgba(0, 0, 0, 0.1333333333);
+}
+.image__inner .image.img1 {
+  background: url(../img/image_bg01.jpg) no-repeat center/cover;
+}
+.image__inner .image.img2 {
+  background: url(../img/image_bg02.jpg) no-repeat center/cover;
+}
+.image__inner .image .image__title {
+  margin-bottom: 14px;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.image__inner .image .image__desc {
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.image__inner .image .image__btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */
