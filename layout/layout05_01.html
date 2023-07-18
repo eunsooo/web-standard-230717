@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout05_02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            
+        }
+        #header {
+            height: 100px;
+            background: #999;
+        }
+        #nav {
+            height: 100px;
+            background: #888;
+        }
+        #main {
+            height: 780px;
+            background: #777;
+        }
+        #footer {
+            height: 100px;
+            background: #222;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1160px;
+            height: inherit;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .contents {
+            
+        }
+        .contents .cont1 {
+            height: 100px;
+            background: #666;
+        }
+        .contents .cont2 {
+            height: 200px;
+            background: #555;
+        }
+        .contents .cont3 {
+            float: left;
+            width: 50%;
+            height: 480px;
+            background: #444;
+        }
+        .contents .cont4 {
+            float: left;
+            width: 50%;
+            height: 480px;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container"></div>
+        </div>
+        <div id="nav">
+            <div class="container"></div>
+        </div>
+        <div id="main">
+            <div class="contents container">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+                <div class="cont4"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container"></div>
+        </div>
+    </div>
+</body>
+</html>

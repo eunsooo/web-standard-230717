@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout05_01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            
+        }
+        #header {
+            height: 100px;
+            background: #999;
+        }
+        #nav {
+            height: 100px;
+            background: #888;
+        }
+        #main {
+            height: 780px;
+            background: #777;
+        }
+        #footer {
+            height: 100px;
+            background: #222;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+            height: inherit;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .contents {
+            
+        }
+        .contents .cont1 {
+            height: 100px;
+            background: #666;
+        }
+        .contents .cont2 {
+            height: 200px;
+            background: #555;
+        }
+        .contents .cont3 {
+            float: left;
+            width: 50%;
+            height: 480px;
+            background: #444;
+        }
+        .contents .cont4 {
+            float: left;
+            width: 50%;
+            height: 480px;
+            background: #333;
+        }
+
+        /* clearfix */
+        .clearfix::before, .clearfix::after {
+            content: '';
+            display: block;
+            line-height: 0;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+
+        @media (max-width: 1300px) { /* 1200px + 20px */
+            .container {
+                width: 96%;
+            }
+            .contents .cont1 {
+                float: left;
+                width: 30%;
+                height: 780px;
+            }
+            .contents .cont2 {
+                float: left;
+                width: 70%;
+                height: 390px;
+            }
+            .contents .cont3 {
+                width: 35%;
+                height: 390px;
+            }
+            .contents .cont4 {
+                width: 35%;
+                height: 390px;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .contents .cont2 {
+                height: 260px;
+            }
+            .contents .cont3 {
+                width: 70%;
+                height: 260px;
+            }
+            .contents .cont4 {
+                width: 70%;
+                height: 260px;
+            }
+        }
+        @media (max-width: 480px) {
+            .contents .cont1 {
+                width: 100%;
+                height: 150px;
+            }
+            .contents .cont2 {
+                width: 100%;
+                height: 210px;
+            }
+            .contents .cont3 {
+                width: 100%;
+                height: 210px;
+            }
+            .contents .cont4 {
+                width: 100%;
+                height: 210px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container"></div>
+        </div>
+        <div id="nav">
+            <div class="container"></div>
+        </div>
+        <div id="main">
+            <div class="contents container clearfix">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+                <div class="cont4"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container"></div>
+        </div>
+    </div>
+</body>
+</html>
