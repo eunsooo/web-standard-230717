@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web standard 2022</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="headerType" class="header__wrap nexon">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="#">web <em>site</em></a>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#">헤더 영역</a></li>
+                    <li><a href="#">슬라이드 영역</a></li>
+                    <li><a href="#">배너 영역</a></li>
+                    <li><a href="#">컨텐츠 영역</a></li>
+                    <li><a href="#">푸터 영역</a></li>
+                </ul>
+            </nav>
+            <div class="header__member">
+                <a href="#">로그인</a>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <section id="sliderType" class="slider__wrap nexon">
+        <h2 class="ir">슬라이드 유형</h2>
+        <div class="slider__inner">
+            <div class="slider">
+                <div class="slider__img">
+                    <div class="desc">
+                        <span>description</span>
+                        <h3>main slide type</h3>
+                        <p>상단 배너 슬라이드 유형은 메인페이지의 가장 중요한 영역에서<br />여러개의 컨텐츠를 보여줄 수 있다는 장점이 있습니다.</p>
+                        <div class="btn">
+                            <a href="#">자세히 보기</a>
+                            <a href="#" class="black">사이트 보기</a>
+                        </div>
+                     </div>
+                </div>
+                <div class="slider__arrow">
+                    <a href="#" class="left"><span class="ir">이전 이미지</span></a>
+                    <a href="#" class="right"><span class="ir">다음 이미지</span></a>
+                </div>
+                <div class="slider__dot">
+                    <a href="#" class="dot active"><span class="ir">1</span></a>
+                    <a href="#" class="dot"><span class="ir">2</span></a>
+                    <a href="#" class="dot"><span class="ir">3</span></a>
+                    <a href="#" class="dot play"><span class="ir">플레이</span></a>
+                    <a href="#" class="dot stop"><span class="ir">정지</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //sliderType -->
+
+    <section id="imageType" class="image__wrap nexon section">
+        <h2>image type</h2>
+        <p>이미지 유형입니다. 마우스 오버시 자세한 정보가 나오는 구조입니다.</p>
+        <div class="image__inner container">
+            <article class="image img1">
+                <h3 class="image__title">text area</h3>
+                <p class="image__desc">Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem. 
+                    Nullam sit amet sem eget massa dignissim venenatis id ac nisl. 
+                    Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem.</p>
+                <a href="#" class="image__btn">자세히 보기</a>
+            </article>
+            <article class="image img2">
+                <h3 class="image__title">text area</h3>
+                <p class="image__desc">Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem. 
+                    Nullam sit amet sem eget massa dignissim venenatis id ac nisl. 
+                    Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem.</p>
+                <a href="#" class="image__btn">자세히 보기</a>
+            </article>
+        </div>
+    </section>
+    <!-- //imageType -->
+
+    <section id="imgTextType" class="imgText__wrap section nexon">
+        <h2 class="ir">image/text type</h2>
+        <div class="imgText__inner container">
+            <div class="imgText__txt">
+                <span class="index">image / text type 01</span>
+                <h3 class="title">image/text<br>type</h3>
+                <p class="desc">이미지와 텍스트가 혼합된 구조의 타입입니다. 메인 컨텐츠와 함께 하위 목록을 표시하기 적합합니다.</p>
+                <ul class="list">
+                    <li><a href="#">튜토리얼 사이트</a></li>
+                    <li><a href="#">레퍼런스 사이트</a></li>
+                    <li><a href="#">웹폰트 사이트</a></li>
+                    <li><a href="#">CSS 사이트</a></li>
+                    <li><a href="#">WebGL 사이트</a></li>
+                    <li><a href="#">Youtube 사이트</a></li>
+                </ul>
+            </div>
+            <div class="imgText__img img1"><a href="#">레퍼런스 사이트</a></div>
+            <div class="imgText__img img2"><a href="#">튜토리얼 사이트</a></div>
+        </div>
+    </section>
+    <!-- //imgTextType -->
+
+    <section id="cardType" class="card__wrap nexon section">
+        <h2>card type</h2>
+        <p>카드형 UI는 동일한 토픽의 컨텐츠를 익숙한 카드 형태의 컨테이너로 묶어<br>사용자의 직관적인 인식을 돕습니다.</p>
+        <div class="card__inner container">
+            <article class="card">
+                <figure class="card__header">
+                    <img src="img/card_bg01.jpg" alt="card title 01">
+                </figure>
+                <div class="card__body">
+                    <h3 class="tit">card title 01</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus. Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem. </p>
+                    <a href="#" class="btn">view more
+                        <span aria-hidden="true"> <!--의미 없는 이미지-->
+                            <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card__header">
+                    <img src="img/card_bg02.jpg" alt="card title 02">
+                </figure>
+                <div class="card__body">
+                    <h3 class="tit">card title 02</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus. Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem. </p>
+                    <a href="#" class="btn">view more
+                        <span aria-hidden="true"> <!--의미 없는 이미지-->
+                            <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card__header">
+                    <img src="img/card_bg03.jpg" alt="card title 03">
+                </figure>
+                <div class="card__body">
+                    <h3 class="tit">card title 03</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus. Vivamus a orci pellentesque, vulputate mi sed, hendrerit lorem. </p>
+                    <a href="#" class="btn">view more
+                        <span aria-hidden="true"> <!--의미 없는 이미지-->
+                            <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- //cardType -->
+
+    <section id="bannerType" class="banner__wrap nexon">
+        <h2 class="ir">배너 영역</h2>
+        <div class="banner__inner section">
+            <h2 class="tit">banner type</h2>
+            <p class="desc">배너 유형은 화면의 상당부분을 차지하며, 눈에 잘 띄는 메세지와<br>
+                관련 옵션을 제공합니다.</p>
+            <span class="index">banner type 01</span>
+        </div>
+    </section>
+    <!-- //bannerType -->
+
+    <section id="textType" class="text__wrap nexon section">
+        <span class="index">text type 01</span>
+        <h2>text type</h2>
+        <div class="text__inner container">
+            <div class="text">
+                <span class="icon"></span>
+                <h3 class="title">text title 01</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus.  </p>
+                <a href="#" class="btn">view more
+                    <span aria-hidden="true"> <!--의미 없는 이미지-->
+                        <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="text">
+                <span class="icon"></span>
+                <h3 class="title">text title 02</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus.  </p>
+                <a href="#" class="btn">view more
+                    <span aria-hidden="true"> <!--의미 없는 이미지-->
+                        <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="text">
+                <span class="icon"></span>
+                <h3 class="title">text title 03</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus.  </p>
+                <a href="#" class="btn">view more
+                    <span aria-hidden="true"> <!--의미 없는 이미지-->
+                        <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="text">
+                <span class="icon"></span>
+                <h3 class="title">text title 04</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus.  </p>
+                <a href="#" class="btn">view more
+                    <span aria-hidden="true"> <!--의미 없는 이미지-->
+                        <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="text">
+                <span class="icon"></span>
+                <h3 class="title">text title 05</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus.  </p>
+                <a href="#" class="btn">view more
+                    <span aria-hidden="true"> <!--의미 없는 이미지-->
+                        <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="text">
+                <span class="icon"></span>
+                <h3 class="title">text title 06</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue a leo vel faucibus.  </p>
+                <a href="#" class="btn">view more
+                    <span aria-hidden="true"> <!--의미 없는 이미지-->
+                        <svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#888888"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- //textType -->
+
+    <section id="footerType" class="footer__wrap nexon section">
+        <h2 class="ir" >푸터 영역</h2>
+        <div class="footer__inner container">
+            <div class="footer__menu">
+                <div class="menu">
+                    <h3 class="title">사이트 제작</h3>
+                    <ul class="list">
+                        <li><a href="#">웹표준 사이트</a></li>
+                        <li><a href="#">반응형 사이트</a></li>
+                        <li><a href="#">패럴랙스 사이트</a></li>
+                        <li><a href="#">포트폴리오 사이트</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="title">헤더 유형</h3>
+                    <ul class="list">
+                        <li><a href="#">헤더 유형 01</a></li>
+                        <li><a href="#">헤더 유형 02</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="title">슬라이드 유형</h3>
+                    <ul class="list">
+                        <li><a href="#">슬라이드 유형 01</a></li>
+                        <li><a href="#">슬라이드 유형 02</a></li>
+                        <li><a href="#">슬라이드 유형 03</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="title">이미지 유형</h3>
+                    <ul class="list">
+                        <li><a href="#">이미지 유형 01</a></li>
+                        <li><a href="#">이미지 유형 02</a></li>
+                        <li><a href="#">이미지/텍스트 유형 01</a></li>
+                        <li><a href="#">이미지/텍스트 유형 02</a></li>
+                        <li><a href="#">텍스트 유형 01</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="title">카드 유형</h3>
+                    <ul class="list">
+                        <li><a href="#">카드 유형 01</a></li>
+                        <li><a href="#">카드 유형 02</a></li>
+                        <li><a href="#">카드 유형 03</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3 class="title">푸터 유형</h3>
+                    <ul class="list">
+                        <li><a href="#">푸터 메뉴 유형 01</a></li>
+                        <li><a href="#">푸터 컨택트 유형 01</a></li>
+                        <li><a href="#">푸터 컨택트 유형 02</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                (c) 2023. Eunsoo Lee<br />All rights reserved.
+            </div>
+        </div>
+    </section>
+    <!-- //footerType -->
+
+</body>
+</html>
